@@ -1,5 +1,5 @@
 from pip._vendor.distlib.compat import raw_input
-from random import *
+from random import randint
 
 from Avaliacao import Avaliacao
 from Movie import Movie
@@ -28,7 +28,9 @@ def delete(id):
             break
 
 def create_avaliacao(movie_id, descricao):
-    avaliacao: Avaliacao = Avaliacao(str(randint(100, 1000)), descricao)
+    avaliacao: Avaliacao = Avaliacao()
+    avaliacao.id = str(randint(100, 1000))
+    avaliacao.descricao = descricao
     for item in movie_list:
         if item.id == movie_id:
             item.avaliacao = avaliacao

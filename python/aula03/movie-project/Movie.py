@@ -6,4 +6,4 @@ class Movie:
         self.id = id
         self.name = name
         self.genre = genre
-        self.avaliacao = Avaliacao('1', 'Teste DESC')
+        self.avaliacao = Avaliacao()
