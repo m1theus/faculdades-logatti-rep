@@ -9,12 +9,14 @@ def create_info(dado):
 
 def create_empresas(dado):
     dado = dado[16:166]
+    dado = dado = dado.strip()
     if len(dado) <= 150:
         dado = dado + '\n'
         empresas.append(dado)
 
 def create_socios(dado):
     dado = dado[33:182]
+    dado = dado.strip()
     if len(dado) <= 150:
         dado = dado + '\n'
         socios.append(dado)
