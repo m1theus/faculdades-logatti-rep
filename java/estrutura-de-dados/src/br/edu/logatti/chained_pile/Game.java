@@ -1,4 +1,4 @@
-package br.edu.logatti.pilha;
+package br.edu.logatti.chained_pile;
 
 public class Game {
 
