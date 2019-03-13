@@ -2,25 +2,26 @@ package br.edu.logatti.pilha;
 
 public class GameStack {
 
-	private static Game top;
+	private Game top;
 	
-	private static Game[] gameStack;
+	private Game[] gameStack;
 	
-	private static int count = 0;
+	private int count = 0;
 	
 	public GameStack() {
 		gameStack = new Game[5];
 		System.out.println("Game Stack criada com sucesso!");
 	}
 	
-	public static void push(Game game) {
+	public void push(Game game) {
+		game.setPreviousGame(top);
 		top = game;
 		gameStack[count] = game;
 		System.out.println(game.getName() + " adicionado com sucesso!");
 		count++;
 	}
 	
-	public static void pop() {
+	public void pop() {
 		Game gameToRemove = gameStack[count - 1];
 		gameStack[count - 1] = null;
 		System.out.println(gameToRemove.getName() + " removido com sucesso!");

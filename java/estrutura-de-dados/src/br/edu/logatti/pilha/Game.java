@@ -7,11 +7,14 @@ public class Game {
 	private String name;
 	
 	private String genre;
+	
+	private Game previousGame;
 
 	public Game(int id, String name, String genre) {
 		this.id = id;
 		this.name = name;
-		this.genre = name;
+		this.genre = genre;
+		this.previousGame = null;
 	}
 
 	public int getId() {
@@ -36,6 +39,14 @@ public class Game {
 
 	public void setGenre(String genre) {
 		this.genre = genre;
+	}
+	
+	public Game getPreviousGame() {
+		return previousGame;
+	}
+
+	public void setPreviousGame(Game previousGame) {
+		this.previousGame = previousGame;
 	}
 	
 	@Override
