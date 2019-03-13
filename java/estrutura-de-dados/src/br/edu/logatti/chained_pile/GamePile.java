@@ -14,14 +14,19 @@ public class GamePile {
 		System.out.println(game.getName() + " adicionado com sucesso!");
 	}
 	
-	public void pop() {
-		Game gameToRemove = this.top;
-		this.top = this.top.getPreviousGame();
-		System.out.println(gameToRemove.getName() + " removido com sucesso!");
-		gameToRemove = null;
+	public GamePile pop() {
+		if (this.top == null) {
+			System.out.println("Pile is empty");
+		} else {
+			Game gameToRemove = this.top;
+			this.top = this.top.getPreviousGame();
+			System.out.println(gameToRemove.getName() + " removido com sucesso!");
+			gameToRemove = null;
+		}
+		return this;
 	}
 	
-	public void print() {
+	public GamePile print() {
 		if (this.top == null) {
 			System.out.println("Pile is empty");
 		} else {
@@ -31,6 +36,7 @@ public class GamePile {
 				auxiliary = auxiliary.getPreviousGame();
 			} while(auxiliary != null);
 		}
+		return this;
 	}
 	
 }

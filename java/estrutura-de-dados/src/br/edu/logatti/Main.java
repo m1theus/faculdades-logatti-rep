@@ -19,6 +19,16 @@ public class Main {
 		gameStack.pop();
 		System.out.println("--------------------\nPrinting stack with pop");
 		gameStack.print();
+		System.out.println("--------------------");
+		gameStack.print()
+				 .pop()
+				 .print()
+				 .pop()
+				 .print()
+				 .pop()
+				 .print()
+				 .pop()
+				 .print();
 	}
 
 }
