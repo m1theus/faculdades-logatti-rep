@@ -1,5 +1,6 @@
 import json
 import re
+import codecs
 
 socios = []
 empresas = []
@@ -10,7 +11,7 @@ TIPO_PF = '01'
 TIPO_PJ = '02'
 
 def get_socio_qualificacao(qualificacao):
-       pdf = open('./dados/qualificacao-socio.txt', 'r')
+       pdf = open('aula04/qualificacao-socio.txt', 'r')
        for line in pdf.readlines():
                if qualificacao == line[0:2]:
                        return str(line[3::].strip())
@@ -22,8 +23,7 @@ def create_info(dado, tipo_dado):
                 info_relatorio["cnpj"] = dado[3:17]
                 info_relatorio["socio"] = dado[33:182]
                 info_relatorio["qualificacao_socio"] = get_socio_qualificacao(dado[31:33])
-                str_relatorio = "CNPJ: " + info_relatorio["cnpj"] + " | " + "SOCIO: " + info_relatorio["socio"] + " | " + 
-                "QUALIFICACAO DO SOCIO: " + info_relatorio["qualificacao_socio"]
+                str_relatorio = "CNPJ: " + info_relatorio["cnpj"] + " | " + "SOCIO: " + info_relatorio["socio"] + " | " + "QUALIFICACAO DO SOCIO: " + str(info_relatorio["qualificacao_socio"]) + "\n"
                 relatorios.append(str_relatorio)
 
 def create_empresas(dado):
@@ -38,7 +38,7 @@ def create_socios(dado):
         dado = dado + '\n'
         socios.append(dado)
 
-file = open('SociosAC.txt', 'r')
+file = open('aula04/SociosAC.txt', 'r')
 dados = file.readlines()
 for line in dados:
     create_info(line.strip(), line[0:2])
@@ -49,14 +49,14 @@ for line in dados:
         create_socios(line.strip())
 file.close()
 
-file = open('socios.txt', 'w')
+file = codecs.open('aula04/socios.txt', 'w', 'utf-8')
 file.writelines(socios)
 file.close()
 
-file = open('empresas.txt', 'w')
+file = codecs.open('aula04/empresas.txt', 'w', 'utf-8')
 file.writelines(empresas)
 file.close()
 
-file = open('relatorio_info.txt', 'w')
+file = codecs.open('aula04/relatorio_info.txt', 'w', 'utf-8')
 file.writelines(relatorios)
 file.close()
