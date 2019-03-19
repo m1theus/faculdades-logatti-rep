@@ -10,13 +10,6 @@ public class Game {
 	
 	private Game previousGame;
 
-	public Game(int id, String name, String genre) {
-		this.id = id;
-		this.name = name;
-		this.genre = genre;
-		this.previousGame = null;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -55,10 +48,10 @@ public class Game {
 				.append("ID: ")
 				.append(this.id)
 				.append(" ")
-				.append("Name: ")
+				.append("   Name: ")
 			    .append(this.name)
 			    .append(" ")
-			    .append("Genre: ")
+			    .append("   Genre: ")
 			    .append(this.genre)
 			    .toString();
 	}
