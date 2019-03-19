@@ -28,7 +28,7 @@ public class GamePile {
 	
 	public GamePile print() {
 		if (this.top == null) {
-			System.out.println("Pile is empty");
+			System.out.println("Pile is empty.");
 		} else {
 			Game auxiliary = this.top;
 			do {
@@ -37,6 +37,31 @@ public class GamePile {
 			} while(auxiliary != null);
 		}
 		return this;
+	}
+
+	public int countPile() {
+		int count = 0;
+		if (this.top != null) {
+			Game auxiliary = this.top;
+			do {
+				auxiliary = auxiliary.getPreviousGame();
+				count++;
+			} while (auxiliary != null);
+		}
+		return count;
+	}
+
+	public Game getByName(String name) {
+		if (this.top != null) {
+			Game auxiliary = this.top;
+			do {
+				if (name.equals(auxiliary.getName())) {
+					return auxiliary;
+				}
+				auxiliary = auxiliary.getPreviousGame();
+			} while (auxiliary != null);
+		}
+		return null;
 	}
 	
 }
