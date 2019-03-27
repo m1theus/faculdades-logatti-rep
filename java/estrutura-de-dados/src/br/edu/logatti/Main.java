@@ -4,11 +4,23 @@ import java.util.Scanner;
 
 import br.edu.logatti.chained_pile.Game;
 import br.edu.logatti.chained_pile.GamePile;
+import br.edu.logatti.fila.Aluno;
+import br.edu.logatti.fila.Fila;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
+		/*Fila fila = new Fila();
+		for (int i = 0; i < 10; i++) {
+			fila.push(new Aluno((i + 1), "Aluno " + (i + 1), "Silva " + (i + 1)));
+		}
+		fila.print();
+		System.out.println(fila.count());
+		fila.pop();
+		System.out.println(fila.count());
+		fila.print();
+		System.out.println(fila.getByName("Aluno 2").getNome());*/
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		GamePile pile = new GamePile();
