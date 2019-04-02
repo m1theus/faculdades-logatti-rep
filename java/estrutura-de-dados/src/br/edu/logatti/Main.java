@@ -6,10 +6,33 @@ import br.edu.logatti.chained_pile.Game;
 import br.edu.logatti.chained_pile.GamePile;
 import br.edu.logatti.fila.Aluno;
 import br.edu.logatti.fila.Fila;
+import br.edu.logatti.fila_estatica.FilaEstatica;
+import br.edu.logatti.fila_estatica.Pessoa;
 
 public class Main {
 
 	public static void main(String[] args) {
+		
+		
+		FilaEstatica filaEstatica = new FilaEstatica(5);
+		for (int i = 1; i < 6; i++) {
+			filaEstatica.push(new Pessoa("Matheus " + i, "Martins " + i, "66-" + i, 'M'));
+		}
+		filaEstatica.print();
+		filaEstatica.pop();
+		filaEstatica.print();
+		filaEstatica.pop();
+		filaEstatica.print();
+		filaEstatica.pop();
+		filaEstatica.print();
+		filaEstatica.pop();
+		filaEstatica.print();
+		filaEstatica.pop();
+		filaEstatica.print();
+		filaEstatica.pop();
+		filaEstatica.push(new Pessoa("Matheus ", "Martins ", "66-", 'M'));
+		filaEstatica.print();
+		
 		
 		/*Fila fila = new Fila();
 		for (int i = 0; i < 10; i++) {
@@ -21,7 +44,8 @@ public class Main {
 		System.out.println(fila.count());
 		fila.print();
 		System.out.println(fila.getByName("Aluno 2").getNome());*/
-		@SuppressWarnings("resource")
+		
+		/*@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		GamePile pile = new GamePile();
 		boolean showMenu = true;
@@ -57,7 +81,7 @@ public class Main {
 					break;
 				default: System.out.println("Opção inválida!\n");
 			}
-		} while (showMenu != false);
+		} while (showMenu != false);*/
 		
 	}
 	
