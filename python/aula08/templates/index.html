@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World</title>
+</head>
+<body>
+    
+        <div>
+            <label for="name">Fist Name</label>
+            <input type="text" id="firstName">
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text" id="lastName">
+        </div>        
+        <div>
+            <button type="button" onclick="submit()">Submit</button>
+        </div>
+
+    <script>
+        
+        function submit() {
+            const fName = document.getElementById('firstName').value;
+            const lName = document.getElementById('lastName').value;
+            const person = {
+                firstName: fName,
+                lastName: lName
+            };
+            save(JSON.stringify(person))
+        }
+
+        function save(person) {
+            fetch('http://localhost:5000/person', {
+                method: 'POST',
+                body: person,
+            }).then(response => {
+                if (response.status === 200) {
+                    document.getElementById('firstName').value = null;
+                    document.getElementById('lastName').value = null;
+                }
+            });
+        }
+
+    </script>
+
+</body>
+</html>

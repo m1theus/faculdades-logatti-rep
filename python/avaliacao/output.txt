@@ -1,0 +1,3 @@
+O(a) Andre conhece 1
+ linguagens de programação.O(a) Ana conhece 2
+ linguagens de programação.O(a) João conhece 6 linguagens de programação.
