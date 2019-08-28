@@ -1,1 +1,1 @@
-# exercicios-logatti
+# College exercises
