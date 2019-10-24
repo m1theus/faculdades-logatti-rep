@@ -14,11 +14,11 @@ public class Exercicio05 {
 		
 		for (int i = 0; i < vetor.length; i++) {
 			if (numero == vetor[i]) {
-				System.out.println(String.format("O número %s está na posição %s do vetor.", numero, i));
+				System.out.println(String.format("O número %s está na posição %s do vetor.", numero, (i - 1)));
 				break;
 			}
 			
-			if ((vetor.length -1) == i) {
+			if ((vetor.length - 1) == i) {
 				System.out.println(String.format("O número informado %s não se encontra no vetor.", numero));
 			}
 			
