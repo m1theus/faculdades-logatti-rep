@@ -54,7 +54,7 @@ public class Trabalho {
 			case 10:
 				System.out.println("Informe um número inteiro para buscar no vetor");
 				n = sc.nextInt();
-				int index3 = binarySearch(vetor, option);
+				int index3 = binarySearch(vetor, 0, vetor.length - 1, n);
 				printNumberSearch(index3, n);
 				break;
 			case 0:
@@ -82,7 +82,7 @@ public class Trabalho {
 		System.out.println("10 - (Busca Binária) ");
 		System.out.println("0 - (Sair) ");
 	}
-	
+
 	public static void printNumberSearch(int index, int n) {
 		if (index == -1) {
 			System.out.println(String.format("o número %s não se encontra no vetor. ", n));
@@ -248,7 +248,7 @@ public class Trabalho {
 
 	public static int sortedLinearSearch(int[] vetor, int n) {
 		quickSort(vetor, 0, vetor.length - 1);
-		
+
 		for (int i = 0; i < vetor.length; i++) {
 			int aux = vetor[i];
 			if (aux > n) {
@@ -264,7 +264,19 @@ public class Trabalho {
 		return -1;
 	}
 
-	public static int binarySearch(int[] vetor, int n) {
+	public static int binarySearch(int[] vetor, int l, int r, int n) {
+		if (r >= l) {
+			int mid = l + (r - l) / 2;
+
+			if (vetor[mid] == n)
+				return mid;
+
+			if (vetor[mid] > n)
+				return binarySearch(vetor, l, mid - 1, n);
+
+			return binarySearch(vetor, mid + 1, r, n);
+		}
+
 		return -1;
 	}
 
