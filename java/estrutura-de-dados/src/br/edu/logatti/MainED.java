@@ -9,7 +9,7 @@ import br.edu.logatti.fila.Fila;
 import br.edu.logatti.fila_estatica.FilaEstatica;
 import br.edu.logatti.fila_estatica.Pessoa;
 
-public class Main {
+public class MainED {
 
 	public static void main(String[] args) {
 		
