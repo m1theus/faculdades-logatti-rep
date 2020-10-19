@@ -1,3 +1,0 @@
-﻿CREATE LOGIN [EC2AMAZ-IREJ1DR\Administrator]
-    FROM WINDOWS;
-
