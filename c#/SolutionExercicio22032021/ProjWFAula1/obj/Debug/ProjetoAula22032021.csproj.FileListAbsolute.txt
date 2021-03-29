@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\Dal.dll
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\Dal.pdb
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjetoAula22032021.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjWFAula1.Form1.resources
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjetoAula22032021.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjetoAula22032021.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjetoAula22032021.csproj.CopyComplete
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\ProjWFAula1.exe.config
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\ProjWFAula1.exe
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\bin\Debug\ProjWFAula1.pdb
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjWFAula1.Properties.Resources.resources
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjWFAula1.exe
+C:\Users\Administrator\Desktop\ProjWFAula1-master\ProjWFAula1\obj\Debug\ProjWFAula1.pdb
