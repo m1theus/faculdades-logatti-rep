@@ -27,7 +27,7 @@ public class OrderService {
             Message.setMessage(new Message(CHAT_BOT, CONSULTA_PEDIDO));
         }
 
-        if ("bot".equals(entity.getMessage())) {
+        if ("bot".equals(entity.getMessage()) || entity.getMessage().contains("bot")) {
             Message.setMessage(new Message(CHAT_BOT, "meu nome é Tob!!!!"));
         }
 
