@@ -1,0 +1,46 @@
+Imperador
+HORÁRIOS: Imperador / Terminal
+DIAS ÚTEIS
+
+IMPERADOR/TERMINAL
+10:05 / 13:15 / 15:45
+
+TERMINAL/IMPERADOR
+09:40 / 12:50 / 15:20
+
+HORÁRIOS ATENDIMENTO CORUJÃO (NORTE, SUL, LESTE E OESTE):
+20:45H / 03:30H
+
+SÁBADO
+
+IMPERDOR / TERMINAL (TCI):
+–
+
+TERMINAL (TCI) / IMPERADOR:
+–
+
+ 
+
+HORÁRIOS ATENDIMENTO CORUJÃO (NORTE, SUL, LESTE E OESTE):
+20:45H / 03:30H
+
+DOMINGO E FERIADO
+
+IMPERDOR / TERMINAL (TCI):
+–
+
+ TERMINAL (TCI) / IMPERADOR:
+–
+
+HORÁRIOS ATENDIMENTO CORUJÃO (NORTE, SUL, LESTE E OESTE):
+20:45H / 03:30H
+ITINERÁRIOS
+Sentido Imperador – Terminal (TCI):
+
+Av. Domingos Carneseca, R. Mal.Humberto de Alencar Castelo Branco, Av. Luiz Dosualdo, R. Lazaro Pedroso, Av. Carlos Bersanetti, Rua Maurício Galli, Av. Luiz Alberto, R. Napoleão Selmi Dei, Av. Bento de Abreu, Rua São Bento, Av. Portugal, Terminal (TCI).
+
+ 
+
+Sentido Terminal (TCI) – Imperador:
+
+Terminal (TCI), Av. São Paulo, Rua 9 de Julho, Av. Bento de Abreu, R. Domingos Barbieri, Av. Queiroz Filho, Rua Maurício Galli, Av. Dr. Miguel Couto, R. Antonio Morgonari, R. Mondo Arquimedes Luppi, R. Mondo Arquimedes Luppi, Av. Olivia Crocce, R. Porfírio Marques Andrade, Av. Giuseppe Aufieiro, R. Tenente José Vicente de Paula Faria Lima, R. Anunciato Rossi, R. Joaquim Albino, R. Franz Arnoldi, Av. Domingos Carneseca, R. Humberto Castelo Branco, Av. Maria Moralles, R. Tenente José Vicente de Paula Faria Lima, R. Carlos José Dias do Nascimento, rua Anunciato Rossi.

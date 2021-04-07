@@ -1,0 +1,61 @@
+Melhado / Pq. Gramado
+HORÁRIOS:
+Melhado / Pq. Gramado
+DIAS ÚTEIS
+
+MELHADO / TERMINAL (TCI)
+05:30 / 08:45 / 14:45 / 18:00
+
+TERMINAL (TCI) / GRAMADO
+07:40 / 13:40 / 16:55
+
+GRAMADO / TERMINAL (TCI)
+05:00 / 08:00 / 14:00 / 17:15
+
+TERMINAL (TCI) / MELHADO
+05:19 / 08:20 / 14:20 / 17:35
+
+HORÁRIOS ATENDIMENTO CORUJÃO (NORTE, SUL, LESTE E OESTE):
+20:45H / 03:30H
+
+SÁBADO
+
+MELHADO / TERMINAL (TCI)
+05:30 / 08:45 / 14:45 / 18:00
+
+TERMINAL (TCI) / MELHADO
+07:40 / 13:40 / 16:55
+
+GRAMADO / TERMINAL (TCI)
+05:00 / 08:00 / 14:00 / 17:15
+
+TERMINAL (TCI) / GRAMADO
+05:19 / 08:20 / 14:20 / 17:35
+
+HORÁRIOS ATENDIMENTO CORUJÃO (NORTE, SUL, LESTE E OESTE):
+20:45H / 03:30H
+DOMINGO E FERIADO
+
+MELHADO / TERMINAL (TCI)
+07:50 / 17:40
+
+TERMINAL (TCI) / MELHADO
+07:35 / 17:25
+
+GRAMADO / TERMINAL (TCI)
+07:20 / 17:10
+
+TERMINAL (TCI) / GRAMADO
+07:00 / 16:50
+
+HORÁRIOS ATENDIMENTO CORUJÃO (NORTE, SUL, LESTE E OESTE):
+20:45H / 03:30H
+
+ITINERÁRIOS
+Sentido TCI – Parque Gramado: Av. Portugal, Rua Antonio Prado, Av. Santo Antonio, Rua Treze de Maio, Av. Julião Caramuru, Rua Padre Francisco Manoel Malaquias, Av. São Francisco Xavier, Rua Bahia, Av. Mario Zampieri, Rua Clóvis Braga P. Ferraz, Av. Gabriel Martins Y Martins, Rua Nhonho Magalhães, Av. José Basile, Rua Genesio Schiavinato (Obs: no sentido Ponto Final não passa pelo bairro Santa Julia), Rua Piauí, Av. Pernambuco, Rua Ermelino Magnani, Av. Atílio Biscari, Rua Mato rosso, Av. Joaquim Vieira dos Santos, Rua São José do Rio Preto , Av. América, Rua Presidente João Belchior Marques Goulart, Av. Santa Catarina (Ponto Final).
+
+Sentido Parque Gramado – TCI:  Av. Santa Catarina, Av. Profº Basilia Ladeira do Amaral, Av. Maria Antonieta de Campos Faria, Rua São José do Rio Preto, Av. José de Anchieta Bueno Lopes, Av. Armando Fedato, Av. Rio de Janeiro, Rua Mato Grosso, Av Gauanabara, Rua dos Estados, Av. Paraíba, Rua Piauí, Rua Benedicto Oliveira Cavalheiro, Av. Bento Toledo Pizza, Rua Genésio Schiavinato, Av. José Basile, Rua Nhonhô Magalhães,Av. Raja Cury, Rua Clovis Braga Pinto Ferraz, Av. Mário Zampieri, Rua Bahia, Av. Julião Caramuru, Rua Bento de Barros, Av. Ipiranga, Rua Dr. Antônio Picaroni, Av. Dr. Leite de Morais, Rua Padre Luciano, Av. Santo Antônio, Av. São Paulo.
+
+Sentido TCI-Melhado: TCI, rua Antonio Prado, av. 7 Setembro, via Expressa, rua Julio Ursulino Pedroso, rua Padre Duarte, rua Miguel Cortes, av. Heitor Bim (Pronto Socorro), rua Cap. José Sabino Sampaio, rua Miguel Cortez, av. Nicolino Raia, rua Capitão Noraí de Paula e Silva, av. Francisco Satriani, rua Cap. José Sabino Sampaio (ponto final).
+
+Sentido Melhado-TCI: rua Cap. José Sabino Sampaio (ponto final), av. Dr. Adhemar Pereira de Barros, rua Deputado Emilio Carlos, avenida Pio Correa Pinheiro, rua Capitão José Sabino, rua Eitor Bim, av. Maria Antonia Camargo de Oliveira, av. Alan Kardec, rua Guarani, rua Freire Jr., rua Antônio Prado, av. São Paulo, TCI.
