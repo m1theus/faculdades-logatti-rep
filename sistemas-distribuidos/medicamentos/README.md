@@ -1,6 +1,6 @@
-#College Exercicie
+# College Exercicie
 
-###how to run
+### how to run
 
 #### docker
 ```
