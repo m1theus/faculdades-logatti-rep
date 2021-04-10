@@ -1,0 +1,9 @@
+server:
+  port: 1337
+
+spring:
+  data:
+    mongodb:
+      database: db_medicamentos
+      host: localhost
+      port: 27017

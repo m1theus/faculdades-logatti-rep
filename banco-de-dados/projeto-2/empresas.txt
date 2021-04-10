@@ -1,0 +1,4 @@
+Manter dados sobre empresas de ônibus que atuam no transporte urbano em Araraquara (nome, endereço, telefone e site Web). Podem ser várias empresas em uma única cidade.
+
+1. Viação Paraty, Avenida Otto Ernani Muller, 10 Jd Tamoio – Araraquara – SP, (16) 3334 7800, https://vparaty.com.br/
+2. Empresa Cruz, Rua Domingos Zanin, 264 Jardim Ártico - CEP 14800-250 Araraquara/SP, 0800 881 5234, https://www.empresacruz.com.br/
