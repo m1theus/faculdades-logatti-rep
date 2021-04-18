@@ -1,0 +1,20 @@
+Empresa(*nome, endereco, telefone, website)
+
+
+Linhas(*codigo, nome)
+
+
+Logradouro(*codigo, nome)
+
+
+QuadroHorarios(*dia, *horario_partida, *codigo_linha)
+FK codigo_linha REF Linhas (codigo)
+
+
+Empresa_Linhas(*nome_empresa, *codigo_linha)
+FK nome_empresa REF Empresa (nome)
+FK codigo_linha REF Linha (codigo)
+
+Itinerario(*codigo_linha, *codigo_logradouro, *nome, *ordem)
+FK codigo_linha REF Linha (codigo)
+FK codigo_logradouro REF Logradouro (codigo)

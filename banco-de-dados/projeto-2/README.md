@@ -29,11 +29,8 @@ horário de saída no mesmo dia. Os quadros de horários não são compartilhado
 diferentes linhas/itinerários.
 
 a) Faça o modelo entidade-relacionamento.
-
 b) Faça o mapeamento para o modelo relacional.
-
 c) Faça a Normalização do modelo relacional obtido.
-
 d) Crie as Tabelas obtidas no item c com suas restrições (OBS: Cuidado com a sequência)
 e) Crie uma base no SGBD definido em aula. 
 
