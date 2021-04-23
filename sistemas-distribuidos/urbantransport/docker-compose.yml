@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  mysql:
+    hostname: projeto2
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: projeto2
+      MYSQL_DATABASE: projeto2
+      MYSQL_USER: projeto2
+      MYSQL_PASSWORD: projeto2
+
+volumes:
+  db_data: {}
