@@ -30,7 +30,7 @@ public class SquadResource {
     }
 
     @GetMapping(ID_PATH)
-    public ResponseEntity<Squad> findById(@PathVariable final Long id) {
+    public ResponseEntity<Squad> findById(@PathVariable final String id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
@@ -40,12 +40,12 @@ public class SquadResource {
     }
 
     @PutMapping(ID_PATH)
-    public ResponseEntity<Squad> update(@PathVariable final Long id, @RequestBody final Squad squad) {
+    public ResponseEntity<Squad> update(@PathVariable final String id, @RequestBody final Squad squad) {
         return ResponseEntity.ok(service.update(id, squad));
     }
 
     @DeleteMapping(ID_PATH)
-    public ResponseEntity<Void> delete(@PathVariable final Long id) {
+    public ResponseEntity<Void> delete(@PathVariable final String id) {
         service.delete(id);
         return ResponseEntity.ok().build();
     }

@@ -16,7 +16,7 @@ public class AmbienteService {
         return repository.findAll();
     }
 
-    public Ambiente findById(final Long id) {
+    public Ambiente findById(final String id) {
         return repository.findById(id).orElseThrow();
     }
 
@@ -24,13 +24,13 @@ public class AmbienteService {
         return repository.save(ambiente);
     }
 
-    public Ambiente update(final Long id, final Ambiente ambiente) {
+    public Ambiente update(final String id, final Ambiente ambiente) {
         final Ambiente entity = findById(id);
         entity.update(ambiente);
         return repository.save(entity);
     }
 
-    public void delete(final Long id) {
+    public void delete(final String id) {
         repository.deleteById(id);
     }
 }

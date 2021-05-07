@@ -1,6 +1,7 @@
 package br.edu.logatti.projetorevisao.entity;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
@@ -8,7 +9,8 @@ import java.time.LocalDate;
 @Data
 @Document
 public class Orcamento {
-    private Long id;
+    @Id
+    private String id;
     private LocalDate dataInicio;
     private LocalDate dataFim;
     private Long quantidadeDias;

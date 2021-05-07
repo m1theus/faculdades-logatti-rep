@@ -30,7 +30,7 @@ public class OrcamentoResource {
     }
 
     @GetMapping(ID_PATH)
-    public ResponseEntity<Orcamento> findById(@PathVariable final Long id) {
+    public ResponseEntity<Orcamento> findById(@PathVariable final String id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
@@ -40,12 +40,12 @@ public class OrcamentoResource {
     }
 
     @PutMapping(ID_PATH)
-    public ResponseEntity<Orcamento> update(@PathVariable final Long id, @RequestBody final Orcamento orcamento) {
+    public ResponseEntity<Orcamento> update(@PathVariable final String id, @RequestBody final Orcamento orcamento) {
         return ResponseEntity.ok(service.update(id, orcamento));
     }
 
     @DeleteMapping(ID_PATH)
-    public ResponseEntity<Void> delete(@PathVariable final Long id) {
+    public ResponseEntity<Void> delete(@PathVariable final String id) {
         service.delete(id);
         return ResponseEntity.ok().build();
     }

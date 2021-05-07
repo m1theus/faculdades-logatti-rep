@@ -30,7 +30,7 @@ public class ModuloResource {
     }
 
     @GetMapping(ID_PATH)
-    public ResponseEntity<Modulo> findById(@PathVariable final Long id) {
+    public ResponseEntity<Modulo> findById(@PathVariable final String id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
@@ -40,12 +40,12 @@ public class ModuloResource {
     }
 
     @PutMapping(ID_PATH)
-    public ResponseEntity<Modulo> update(@PathVariable final Long id, @RequestBody final Modulo modulo) {
+    public ResponseEntity<Modulo> update(@PathVariable final String id, @RequestBody final Modulo modulo) {
         return ResponseEntity.ok(service.update(id, modulo));
     }
 
     @DeleteMapping(ID_PATH)
-    public ResponseEntity<Void> delete(@PathVariable final Long id) {
+    public ResponseEntity<Void> delete(@PathVariable final String id) {
         service.delete(id);
         return ResponseEntity.ok().build();
     }

@@ -30,7 +30,7 @@ public class AmbienteResource {
     }
 
     @GetMapping(ID_PATH)
-    public ResponseEntity<Ambiente> findById(@PathVariable final Long id) {
+    public ResponseEntity<Ambiente> findById(@PathVariable final String id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
@@ -40,12 +40,12 @@ public class AmbienteResource {
     }
 
     @PutMapping(ID_PATH)
-    public ResponseEntity<Ambiente> update(@PathVariable final Long id, @RequestBody final Ambiente ambiente) {
+    public ResponseEntity<Ambiente> update(@PathVariable final String id, @RequestBody final Ambiente ambiente) {
         return ResponseEntity.ok(service.update(id, ambiente));
     }
 
     @DeleteMapping(ID_PATH)
-    public ResponseEntity<Void> delete(@PathVariable final Long id) {
+    public ResponseEntity<Void> delete(@PathVariable final String id) {
         service.delete(id);
         return ResponseEntity.ok().build();
     }

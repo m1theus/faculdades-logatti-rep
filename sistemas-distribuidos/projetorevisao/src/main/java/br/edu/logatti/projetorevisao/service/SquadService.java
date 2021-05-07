@@ -16,7 +16,7 @@ public class SquadService {
         return repository.findAll();
     }
 
-    public Squad findById(final Long id) {
+    public Squad findById(final String id) {
         return repository.findById(id).orElseThrow();
     }
 
@@ -24,13 +24,13 @@ public class SquadService {
         return repository.save(squad);
     }
 
-    public Squad update(final Long id, final Squad squad) {
+    public Squad update(final String id, final Squad squad) {
         final Squad entity = findById(id);
         entity.update(squad);
         return repository.save(entity);
     }
 
-    public void delete(final Long id) {
+    public void delete(final String id) {
         repository.deleteById(id);
     }
 }
