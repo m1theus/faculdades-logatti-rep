@@ -1,0 +1,21 @@
+server:
+  port: 1337
+
+spring:
+  data:
+    mongodb:
+      database: db_techjobs
+      host: localhost
+      port: 27017
+  cache:
+    type: redis
+    redis:
+      time-to-live: 10000
+  redis:
+    host: localhost
+    port: 6379
+    password: redis123
+
+app:
+  file:
+    queue: files-queue

@@ -1,0 +1,5 @@
+mainClassName = "br.edu.logatti.AsyncApplication"
+
+dependencies {
+    implementation project(":techjobs-core")
+}

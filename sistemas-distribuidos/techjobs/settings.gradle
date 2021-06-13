@@ -1,1 +1,5 @@
 rootProject.name = 'techjobs'
+include 'techjobs-api'
+include 'techjobs-core'
+include 'tech-jobs-async'
+

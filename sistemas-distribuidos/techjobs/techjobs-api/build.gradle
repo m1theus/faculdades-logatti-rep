@@ -1,0 +1,8 @@
+mainClassName = "br.edu.logatti.ApiApplication"
+
+dependencies {
+    implementation project(":techjobs-core")
+    implementation "io.springfox:springfox-swagger2:$swaggerVersion"
+    implementation "io.springfox:springfox-swagger-ui:$swaggerVersion"
+
+}
