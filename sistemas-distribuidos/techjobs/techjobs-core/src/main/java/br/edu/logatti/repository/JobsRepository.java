@@ -1,10 +1,10 @@
 package br.edu.logatti.repository;
 
-import br.edu.logatti.entity.JobEntity;
+import br.edu.logatti.model.JobEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.Optional;
+import java.util.List;
 
 public interface JobsRepository extends MongoRepository<JobEntity, String> {
-    Optional<JobEntity> findByNomeVagaLike(String name);
+    List<JobEntity> findByNomeVagaContainingIgnoreCase(String name);
 }

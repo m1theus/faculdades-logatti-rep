@@ -1,6 +1,6 @@
 package br.edu.logatti.service;
 
-import br.edu.logatti.entity.JobFile;
+import br.edu.logatti.model.JobFile;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;

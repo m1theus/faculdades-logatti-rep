@@ -1,4 +1,4 @@
-package br.edu.logatti.entity;
+package br.edu.logatti.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,9 +12,9 @@ import java.io.Serializable;
 @ToString
 @AllArgsConstructor
 public class JobDTO implements Serializable {
+    private static final long serialVersionUID = -8331885081966266240L;
     private final String id;
     private final String nomeVaga;
     private final String cargoVaga;
     private final String techVaga;
-    private final String obsVaga;
 }

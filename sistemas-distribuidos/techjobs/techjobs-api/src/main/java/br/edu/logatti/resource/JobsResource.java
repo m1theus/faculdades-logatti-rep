@@ -1,9 +1,10 @@
 package br.edu.logatti.resource;
 
-import br.edu.logatti.entity.JobDTO;
 import br.edu.logatti.exception.ResourceNotFoundException;
+import br.edu.logatti.model.JobDTO;
 import br.edu.logatti.service.JobsService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,9 +33,15 @@ public class JobsResource {
         return ResponseEntity.ok(service.findById(id));
     }
 
-    @GetMapping
-    public ResponseEntity<JobDTO> queryByName(@RequestParam final String name) {
+    @GetMapping("/query")
+    public ResponseEntity<List<JobDTO>> queryByName(@RequestParam final String name) {
         return ResponseEntity.ok(service.queryByName(name));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteById(@PathVariable final String id) {
+        service.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 
     @ExceptionHandler(value = ResourceNotFoundException.class)

@@ -1,4 +1,4 @@
-package br.edu.logatti.entity;
+package br.edu.logatti.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -19,15 +19,17 @@ import java.util.UUID;
 @ToString
 @EqualsAndHashCode
 public class JobFile implements Serializable {
+    private static final long serialVersionUID = 6604465265016149853L;
     private final UUID id;
     private final String fileName;
-    private final transient InputStream fileContent;
+    private final byte[] fileContent;
 
     public JobFile(final MultipartFile file) throws IOException {
         if ("xlsx".equals(fileExtension(file))) {
-            this.fileContent = convertXlsToCsv(file);
+            final var csvFile = convertXlsToCsv(file);
+            this.fileContent = csvFile.readAllBytes();
         } else {
-            this.fileContent = file.getInputStream();
+            this.fileContent = file.getInputStream().readAllBytes();
         }
         this.id = UUID.randomUUID();
         this.fileName = file.getOriginalFilename();

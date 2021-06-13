@@ -1,8 +1,8 @@
 package br.edu.logatti.service;
 
-import br.edu.logatti.entity.JobDTO;
-import br.edu.logatti.entity.JobEntity;
 import br.edu.logatti.exception.ResourceNotFoundException;
+import br.edu.logatti.model.JobDTO;
+import br.edu.logatti.model.JobEntity;
 import br.edu.logatti.repository.JobsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
@@ -49,15 +49,21 @@ public class JobsService {
             key = "#name",
             unless = "#result == null"
     )
-    public JobDTO queryByName(final String name) {
+    public List<JobDTO> queryByName(final String name) {
         log.info("c=JobsService m=queryByName name={}", name);
-        return repository.findByNomeVagaLike(name)
+        return repository.findByNomeVagaContainingIgnoreCase(name)
+                .stream()
                 .map(JobEntity::toDTO)
-                .orElseThrow(ResourceNotFoundException::new);
+                .collect(Collectors.toList());
     }
 
     public void saveAll(final List<JobEntity> entities) {
         log.info("c=JobsService m=saveAll entities={}", entities);
         repository.saveAll(entities);
+    }
+
+    public void deleteById(final String id) {
+        log.info("c=JobsService m=deleteById id={}", id);
+        repository.deleteById(id);
     }
 }
